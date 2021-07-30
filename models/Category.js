@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const { NOT } = require('sequelize/types/lib/deferrable');
+
 
 const sequelize = require('../config/connection.js');
 
@@ -13,7 +13,7 @@ Category.init({
         autoIncrement: true
     },
     category_name: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     }
     // define columns
